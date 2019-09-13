@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    var age = prompt("Cколько Вам лет???");
+
+    if((( age % 10 ) > 1) && (( age % 10 ) < 5)){
+            if ((11 < age) && (age < 15)){
+                console.log("Вам ", age ," Лет");
+                console.log(age);
+            }else{
+                console.log("Вам ", age ," Года");
+                console.log(age);
+            }
+    }else if(( age % 10 ) == 1){
+            if(( age % 100 ) == 11){
+                console.log(age);
+                console.log("Вам ", age ," Лет");
+            }else{
+                console.log("Вам ", age , "Год");
+                console.log(age);
+            }
+    }else{
+            console.log("Вам ", age ," Лет");
+            console.log(age);
+    }
+</script>
+</body>
+</html>
